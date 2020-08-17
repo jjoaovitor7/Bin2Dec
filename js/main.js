@@ -11,7 +11,7 @@ function capture() {
     }
     else {
         binaryCalc = parseInt(binary, 2);
-        if (binaryCalc == NaN) {
+        if (isNaN(binaryCalc)) {
             alert("Só é permitido 0's ou 1's.");
         }
         else {
