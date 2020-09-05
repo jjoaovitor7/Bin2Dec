@@ -5,7 +5,7 @@ body {
 
 header h1 {
     border: 1px solid green;
-    margin: 25px auto 25px auto;
+    margin: 25px auto;
     text-align: center;
 
     font-family: 'Share Tech', sans-serif;
@@ -33,7 +33,7 @@ input[type="number"] {
 
 input[type="submit"] {
     font-family: 'Share Tech', sans-serif;   
-    margin: 25px 0 0 0;
+    margin-top: 25px;
     background-color: #4caf50; /* Green */
     border: none;
     color: #000;
