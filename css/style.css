@@ -28,7 +28,7 @@ label {
 
 input[type="number"] {
     font-family: 'Share Tech', sans-serif;   
-    padding: 10px 0
+    padding: 10px 0;
 }
 
 input[type="submit"] {
