@@ -1,7 +1,13 @@
 # Bin2Dec
-[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](https://forthebadge.com)
+<p align="center">
+  <img src="./screenshots/1.png" />
+</p>
+
+<p align="center">
+  <a href="https://forthebadge.com"> <img src="https://forthebadge.com/images/badges/uses-html.svg" /> </a>
+  <a href="https://forthebadge.com"> <img src="https://forthebadge.com/images/badges/uses-css.svg" /> </a>
+  <a href="https://forthebadge.com"> <img src="https://forthebadge.com/images/badges/uses-js.svg" /> </a>
+</p>
 
 
 ## :scroll: Sobre
