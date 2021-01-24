@@ -1,11 +1,27 @@
 body {
-  margin: 35vh 0 0 0;
   background: #006400; /* Dark Green */
+}
+
+.darkmode {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+#cbDarkMode {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+label[for="cbDarkMode"] {
+  position: absolute;
+  right: 15px;
+  top: 0px;
 }
 
 header h1 {
   border: 1px solid green;
-  margin: 25px auto;
+  margin: 35vh auto 25px auto;
   text-align: center;
 
   font-family: "Share Tech", sans-serif;
@@ -34,12 +50,11 @@ input[type="number"] {
 input[type="submit"] {
   font-family: "Share Tech", sans-serif;
   margin-top: 25px;
-  background-color: #4caf50; /* Green */
+  background: #4caf50;
   border: none;
   color: #000;
   padding: 15px 32px;
   text-align: center;
-  text-decoration: none;
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;

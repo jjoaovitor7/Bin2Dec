@@ -15,3 +15,17 @@ function capture() {
     }
   }
 }
+
+function toogleToDarkMode() {
+  if (document.getElementById("cbDarkMode").checked) {
+    document.body.classList = "darkmode";
+    document.querySelector("header").classList = "darkmode";
+  }
+
+  else {
+    document.body.classList.remove("darkmode");
+    document.querySelector("header").classList.remove("darkmode");
+  }
+}
+
+document.getElementById("cbDarkMode").addEventListener("click", toogleToDarkMode);
