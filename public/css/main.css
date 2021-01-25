@@ -7,16 +7,64 @@ body {
   color: #fff !important;
 }
 
-#cbDarkMode {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
 label[for="cbDarkMode"] {
   position: absolute;
-  right: 15px;
-  top: 0px;
+  right: 75px;
+  top: 15px;
+}
+
+.switch-container {
+  position: absolute;
+  width: 60px;
+  height: 34px;
+  top: 5px;
+  right: 0;
+}
+
+.switch-container input[type="checkbox"] {
+  appearance: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 25px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background: green;
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 25px;
+}
+
+input[type="checkbox"]:checked + .slider {
+  background: #fff;
+}
+
+/* input[type="checkbox"]:focus + .slider {
+  box-shadow: 0 0 1px #fff;
+} */
+
+input[type="checkbox"]:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -moz-transform: translateX(26px);
+  transform: translateX(26px);
 }
 
 header h1 {
@@ -64,31 +112,6 @@ input[type="submit"]:hover {
   opacity: 1;
 }
 
-@keyframes slidein {
-  from {
-    transform: scaleX(0);
-  }
-  to {
-    transform: scaleX(1);
-  }
-}
-@-moz-keyframes slidein {
-  from {
-    transform: scaleX(0);
-  }
-  to {
-    transform: scaleX(1);
-  }
-}
-@-webkit-keyframes slidein {
-  from {
-    transform: scaleX(0);
-  }
-  to {
-    transform: scaleX(1);
-  }
-}
-
 footer {
   background-color: #0c4b0c;
 
@@ -104,4 +127,10 @@ footer p {
   font-size: 16px;
   color: #fff;
   font-family: "Lobster", cursive;
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    margin: 10vh auto 25px auto;
+  }
 }
